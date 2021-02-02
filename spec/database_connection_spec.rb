@@ -8,14 +8,15 @@ describe DatabaseConnection do
       DatabaseConnection.setup('makersbnb_test')
     end
   end
-  
+
   describe '.query' do
     it 'executes a query via PG' do
       connection = DatabaseConnection.setup('makersbnb_test')
 
       expect(connection).to receive(:exec).with('SELECT * FROM listings;')
-
+      expect(connection).to receive(:exec).with('SELECT * FROM bookings;')
       DatabaseConnection.query('SELECT * FROM listings;')
+      DatabaseConnection.query('SELECT * FROM bookings;')
     end
   end
 end

@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/bookings_spec.rb": {
+      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/booking_spec.rb": {
         "lines": [
           1,
           1,
@@ -9,8 +9,8 @@
           1,
           1,
           1,
+          null,
           1,
-          0,
           0,
           0,
           null,
@@ -23,7 +23,7 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/lib/bookings.rb": {
+      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/lib/booking.rb": {
         "lines": [
           1,
           null,
@@ -38,9 +38,9 @@
           0,
           null,
           null,
-          null,
-          null,
-          null,
+          1,
+          1,
+          0,
           null,
           null
         ]
@@ -55,7 +55,7 @@
           null,
           null,
           1,
-          3,
+          4,
           null,
           null
         ]
@@ -88,7 +88,8 @@
           1,
           null,
           1,
-          null,
+          1,
+          1,
           1,
           null,
           null,
@@ -129,7 +130,7 @@
           null,
           null,
           1,
-          2,
+          1,
           1,
           null,
           null,
@@ -137,6 +138,6 @@
         ]
       }
     },
-    "timestamp": 1612268023
+    "timestamp": 1612269684
   }
 }
