@@ -21,7 +21,7 @@ class User
       connection = PG.connect(dbname: 'makersbnb')
     end
       result = connection.exec("INSERT INTO users (email, password, name) VALUES ('#{email}', '#{secret_password}', '#{name}') RETURNING id, email, password, name;").first
-      User.new(id: result['id'], email: result['email'], password: ['password'], name: result['name'])
+      User.new(id: result['id'], email: result['email'], password: result['password'], name: result['name'])
    end
 
    def self.authenticate(email:, password:)
@@ -33,6 +33,6 @@ class User
      result = connection.exec("SELECT * FROM users WHERE email = '#{email}';").first
      return nil unless result
      return nil unless BCrypt::Password.new(result['password']) == password
-     User.new(id: result['id'], email: result['email'], password: ['password'], name: result['name'])
+     User.new(id: result['id'], email: result['email'], password: result['password'], name: result['name'])
    end
 end
