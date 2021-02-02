@@ -1,4 +1,5 @@
 require 'sinatra'
+require './lib/spaces'
 
 class MakersBnB < Sinatra::Base
   
@@ -26,6 +27,12 @@ class MakersBnB < Sinatra::Base
   post '/spaces' do
     redirect '/spaces'
   end
+
+  post '/create-spaces' do
+    Spaces.create(name: params["space-name"])
+    redirect '/spaces'
+  end
+
 
 run! if app_file == $0
 
