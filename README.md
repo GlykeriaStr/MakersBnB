@@ -30,3 +30,6 @@ To run the tests a test database will also need to be set up.
 
 14. Run local server `rackup`
 15. Open browser and head to `http://localhost:9292`
+
+16. test - glykeria 
+17. test - meg 
