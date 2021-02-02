@@ -11,7 +11,16 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/spaces' do
-    erb(:spaces)
+    erb(:"spaces/index")
+  end
+  
+  get '/spaces/new' do
+    erb(:"spaces/new")
+  end
+
+  # get '/booking/:id' do
+  get '/spaces/1' do
+    erb(:"spaces/book")
   end
 
 run! if app_file == $0
