@@ -1,35 +1,54 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/megangosnell/Desktop/MakersBnB/spec/booking_spec.rb": {
+      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/users_spec.rb": {
         "lines": [
           1,
-          1,
-          1,
-          null,
-          1,
-          1,
           null,
           1,
           1,
           1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
           1,
           1,
           null,
           1,
-          1,
           null,
           1,
-          null,
+          1,
+          0,
+          0,
           null,
           null,
           null
         ]
       },
-      "/Users/megangosnell/Desktop/MakersBnB/lib/booking.rb": {
+      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/lib/user.rb": {
         "lines": [
           1,
+          null,
           1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
           null,
           1,
           null,
@@ -37,6 +56,9 @@
           null,
           1,
           1,
+          null,
+          0,
+          null,
           1,
           1,
           null,
@@ -49,168 +71,13 @@
           null,
           1,
           1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/megangosnell/Desktop/MakersBnB/lib/database_connection.rb": {
-        "lines": [
           1,
-          null,
           1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/megangosnell/Desktop/MakersBnB/spec/persisted_data.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          3,
-          3,
-          null
-        ]
-      },
-      "/Users/megangosnell/Desktop/MakersBnB/lib/spaces.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          0,
-          null,
-          2,
-          2,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/megangosnell/Desktop/MakersBnB/spec/database_connection_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/megangosnell/Desktop/MakersBnB/spec/feature/homepage_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/megangosnell/Desktop/MakersBnB/spec/spaces_spec.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/megangosnell/Desktop/MakersBnB/spec/users_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/megangosnell/Desktop/MakersBnB/lib/user.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          0,
-          null,
-          1,
-          1,
-          null,
-          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1612279151
+    "timestamp": 1612283125
   }
 }

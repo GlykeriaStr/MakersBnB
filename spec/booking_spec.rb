@@ -6,7 +6,8 @@ describe Booking do
   describe '.create' do
 
     it 'should request a booking' do
-      listing = Spaces.create(name: 'first listing')
+      user = User.create(email: 'hello@gmail', password: 'password', name: 'meg')
+      listing = Spaces.create(name: 'first listing', description: 'Lovely place', cost: 60, user_id: user.id)
       booking = Booking.create(days: 2)
       id = booking.id
       persisted_data = persisted_data_retrieve(table: 'bookings', id: id)
