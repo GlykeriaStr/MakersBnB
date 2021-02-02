@@ -21,3 +21,5 @@ class Booking
     Booking.new(id: result['id'], days: result['days'], listing_id: result['listing_id'])
   end
 end
+
+# delete this sentence

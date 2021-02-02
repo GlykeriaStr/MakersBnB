@@ -18,3 +18,4 @@ describe Booking do
     end
   end
 end
+# delete this sentence
