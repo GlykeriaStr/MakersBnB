@@ -16,4 +16,20 @@ describe Spaces do
       expect(listing.cost).to eq '60'
     end
   end
+
+  describe '.all' do
+    it 'should show all the spaces' do
+      user = User.create(email: 'hello@gmail', password: 'password', name: 'meg')
+      listing = Spaces.create(name: 'first listing', description: 'Lovely place', cost: 60, user_id: user.id)
+      Spaces.create(name: 'second listing', description: 'playing time', cost: 30, user_id: user.id)
+      Spaces.create(name: 'third listing', description: 'our third place', cost: 50, user_id: user.id)
+
+      spaces = Spaces.all
+
+      expect(spaces.length).to eq 3
+      expect(spaces.first).to be_a Spaces
+      expect(spaces.first.id).to eq listing.id
+      expect(spaces.first.name).to eq listing.name
+    end
+  end
 end

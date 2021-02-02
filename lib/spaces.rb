@@ -23,4 +23,17 @@ class Spaces
     result = connection.exec("INSERT INTO listings (name, description, cost, user_id) VALUES ('#{name}', '#{description}', #{cost}, #{user_id}) RETURNING id, name, description, cost, user_id;").first
     Spaces.new(id: result['id'], name: result['name'], description: result['description'], cost: result['cost'], user_id: result['user_id'])
   end
+
+  def self.all
+    if ENV['ENVIRONMENT'] == 'test'
+      connection = PG.connect(dbname: 'makersbnb_test')
+    else
+      connection = PG.connect(dbname: 'makersbnb')
+    end
+    result = connection.exec("SELECT * FROM listings;")
+    result.map do |listing|
+      Spaces.new(id: listing['id'], name: listing['name'], description: listing['description'], cost: listing['cost'], user_id: listing['user_id'])
+    end
+  end
+
 end
