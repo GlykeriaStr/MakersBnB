@@ -22,4 +22,4 @@ class Booking
   end
 end
 
-# delete this sentence
+
