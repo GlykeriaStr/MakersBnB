@@ -1,11 +1,14 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/feature/homepage_spec.rb": {
       "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/booking_spec.rb": {
         "lines": [
           1,
           1,
           1,
+          1,
+          null,
           null,
           1,
           1,
@@ -150,6 +153,7 @@
         ]
       }
     },
+    "timestamp": 1612262778
     "timestamp": 1612271229
   }
 }

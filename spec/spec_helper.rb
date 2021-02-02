@@ -6,7 +6,12 @@ require 'rspec'
 require 'capybara/rspec'
 require 'simplecov'
 require 'simplecov-console'
+
+
+Capybara.app = MakersBnB
+
 require_relative 'setup_test_database'
+
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console,
