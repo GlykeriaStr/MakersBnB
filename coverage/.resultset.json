@@ -1,6 +1,46 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/megangosnell/Desktop/MakersBnB/spec/database_connection_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/megangosnell/Desktop/MakersBnB/lib/database_connection.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/megangosnell/Desktop/MakersBnB/spec/spaces_spec.rb": {
         "lines": [
           1,
@@ -24,9 +64,12 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           1,
+          1,
+          null,
           1,
           null,
           null,
@@ -34,6 +77,6 @@
         ]
       }
     },
-    "timestamp": 1612263042
+    "timestamp": 1612264211
   }
 }
