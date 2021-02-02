@@ -6,6 +6,10 @@ class MakersBnB < Sinatra::Base
     erb(:index)
   end
 
+  get '/login' do
+    erb(:login)
+  end
+
   get '/spaces' do
     erb(:spaces)
   end
