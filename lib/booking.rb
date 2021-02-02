@@ -1,18 +1,23 @@
 require 'database_connection'
+require 'pg'
 
 class Booking
 
-  attr_reader :id, :start_date, :end_date, :listing_id
+  attr_reader :id, :days, :listing_id
 
-  def initialize(id:, start_date:, end_date: ,listing_id:)
+  def initialize(id:, days: ,listing_id:)
     @id = id
-    @start_date = start_date
-    @end_date = end_date
+    @days = days
     @listing_id = listing_id
   end
 
-  def self.create(start_date:, end_date:)
-    result = DatabaseConnection.query("INSERT INTO bookings (start_date, end_date) VALUES (#{start_date}, #{end_date}) RETURNING id, start_date, end_date, listing_id;").first
-    Bookings.new(id: result['id'], start_date: result['start_date'], end_date: result['end_date'], listing_id: result['listing_id'])
+  def self.create(days:)
+    if ENV['ENVIRONMENT'] == 'test'
+      connection = PG.connect(dbname: 'makersbnb_test')
+    else
+      connection = PG.connect(dbname: 'makersbnb')
+    end
+    result = connection.exec("INSERT INTO bookings (days) VALUES (#{days}) RETURNING id, days, listing_id;").first
+    Booking.new(id: result['id'], days: result['days'], listing_id: result['listing_id'])
   end
 end

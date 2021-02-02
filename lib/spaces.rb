@@ -10,7 +10,12 @@ class Spaces
   end
 
   def self.create(name:)
-    result = DatabaseConnection.query("INSERT INTO listings (name) VALUES ('#{name}') RETURNING id, name;")
+    if ENV['ENVIRONMENT'] == 'test'
+      connection = PG.connect(dbname: 'makersbnb_test')
+    else
+      connection = PG.connect(dbname: 'makersbnb')
+    end
+    result = connection.exec("INSERT INTO listings (name) VALUES ('#{name}') RETURNING id, name;")
     Spaces.new(id: result[0]['id'], name: result[0]['name'])
   end
 
