@@ -36,4 +36,14 @@ class Spaces
     end
   end
 
+  def self.find_by_id(id:)
+    if ENV['ENVIRONMENT'] == 'test'
+      connection = PG.connect(dbname: 'makersbnb_test')
+    else
+      connection = PG.connect(dbname: 'makersbnb')
+    end
+    result = connection.exec("SELECT * FROM listings WHERE id = #{id};").first
+    Spaces.new(id: result['id'], name: result['name'], description: result['description'], cost: result['cost'], user_id: result['user_id'])
+  end
+
 end

@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/booking_spec.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/booking_spec.rb": {
         "lines": [
           1,
           1,
@@ -29,7 +29,7 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/persisted_data.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/persisted_data.rb": {
         "lines": [
           1,
           null,
@@ -39,7 +39,7 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/database_connection_spec.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/database_connection_spec.rb": {
         "lines": [
           1,
           null,
@@ -65,17 +65,7 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/feature/homepage_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/spaces_spec.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/spaces_spec.rb": {
         "lines": [
           1,
           1,
@@ -111,10 +101,23 @@
           1,
           null,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/users_spec.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/users_spec.rb": {
         "lines": [
           1,
           null,
@@ -163,6 +166,6 @@
         ]
       }
     },
-    "timestamp": 1612347468
+    "timestamp": 1612356532
   }
 }

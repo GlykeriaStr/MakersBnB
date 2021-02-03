@@ -26,14 +26,14 @@ class MakersBnB < Sinatra::Base
     erb(:"spaces/new")
   end
 
-  # get '/booking/:id' do
-  get '/spaces/1' do
+  get '/spaces/:id' do
+    @space = Spaces.find_by_id(id: params[:id])
     erb(:"spaces/book")
   end
 
   post '/spaces' do
     users = User.find_by_id(id: session[:user_id])
-    space = Spaces.create(name: params[:spacename], description: params[:spacedescription], cost: params[:spaceprice], user_id: users.id)
+    space = Spaces.create(name: params[:spacename], description: params[:spacedescription], cost: params[:spaceprice], user_id: users)
     redirect '/spaces'
   end
 

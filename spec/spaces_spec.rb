@@ -32,4 +32,17 @@ describe Spaces do
       expect(spaces.first.name).to eq listing.name
     end
   end
+
+  describe '.find_by_id' do
+    it 'should find a listing by its id' do
+      user = User.create(email: 'hello@gmail', password: 'password', name: 'meg')
+      space =Spaces.create(name: 'fourth listing', description: 'our fourth place', cost: 50, user_id: user.id)
+      id  = space.id
+
+      returned_listing = Spaces.find_by_id(id: id)
+
+      expect(returned_listing).to be_a Spaces
+      expect(returned_listing.id).to eq id
+    end
+  end
 end
