@@ -43,6 +43,8 @@ describe Spaces do
 
       expect(returned_listing).to be_a Spaces
       expect(returned_listing.id).to eq id
+      expect(returned_listing.name).to eq space.name
+      expect(returned_listing.description).to eq space.description
     end
   end
 end
