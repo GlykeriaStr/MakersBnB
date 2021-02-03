@@ -27,4 +27,18 @@ describe User do
       expect(correct_user.name).to eq 'meg'
     end
   end
+
+  describe '.find_by_id' do
+    it 'should find a user by its id' do
+      user = User.create(email: 'hello@gmail', password: 'password', name: 'meg')
+      id  = user.id
+
+      returned_user = User.find_by_id(id: id)
+
+      expect(returned_user).to be_a User
+      expect(returned_user.id).to eq id
+      expect(returned_user.email).to eq 'hello@gmail'
+      expect(returned_user.name).to eq 'meg'
+    end
+  end
 end

@@ -35,4 +35,14 @@ class User
      return nil unless BCrypt::Password.new(result['password']) == password
      User.new(id: result['id'], email: result['email'], password: result['password'], name: result['name'])
    end
+
+   def self.find_by_id(id:)
+     if ENV['ENVIRONMENT'] == 'test'
+       connection = PG.connect(dbname: 'makersbnb_test')
+     else
+       connection = PG.connect(dbname: 'makersbnb')
+     end
+     result = connection.exec("SELECT * FROM users WHERE id = #{id};").first
+     User.new(id: result['id'], email: result['email'], password: result['password'], name: result['name'])
+   end
 end
