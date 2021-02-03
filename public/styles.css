@@ -21,6 +21,7 @@ h1 {
 
 .header-links {
   text-align: end;
+  margin: 25px;
 }
 
 .sign-up-form {
@@ -30,4 +31,8 @@ h1 {
   align-content: center;
   align-items: center;
   padding: 20px;
+}
+
+.page-title {
+  margin: 25px;
 }

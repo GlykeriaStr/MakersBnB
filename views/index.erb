@@ -15,19 +15,21 @@
     <h1 class="page-title">Makers BnB</h1>
     <div class='sign-up-form'>
         <h2>Sign up</h2>
-        <form action="/spaces" method="post">
+        <form action="/users" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="exampleInputName" placeholder="Enter name" name="name">
+        </div>
+        <br />
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" />
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
+        <br />
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password confirmation</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password again" name="password-confirmation">
         </div>
         <br />
         <button type="submit" class="btn btn-primary">Submit</button>

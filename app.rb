@@ -1,6 +1,13 @@
-require 'sinatra'
+require "sinatra/base"
+require "sinatra/flash"
+require "./lib/spaces"
+require "./lib/user"
+require "./lib/booking"
 
 class MakersBnB < Sinatra::Base
+
+  enable :sessions, :method_override
+  register Sinatra::Flash
   
   get '/' do
     erb(:index)
@@ -11,6 +18,7 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/spaces' do
+    @spaces = Spaces.all
     erb(:"spaces/index")
   end
   
@@ -24,7 +32,25 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/spaces' do
+    space = Spaces.create(name: params[:spacename], description: params[:spacedescription], cost: params[:spaceprice], user_id: params[:id])
     redirect '/spaces'
+  end
+
+  post "/users" do
+    user = User.create(email: params[:email], password: params[:password], name: params[:name])
+    session[:user_id] = user.id
+    redirect "/spaces"
+  end
+
+  post "/sessions" do
+    user = User.authenticate(email: params[:email], password: params[:password])
+    if user
+      session[:user_id] = user.id
+      redirect('/spaces')
+    else
+      flash[:notice] = "Please check your email or password."
+      redirect "login"
+    end
   end
 
 run! if app_file == $0
