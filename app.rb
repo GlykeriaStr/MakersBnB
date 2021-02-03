@@ -27,7 +27,7 @@ class MakersBnB < Sinatra::Base
   end
 
   # get '/booking/:id' do
-  get '/spaces/1' do
+  post '/spaces/:id' do
     erb(:"spaces/book")
   end
 

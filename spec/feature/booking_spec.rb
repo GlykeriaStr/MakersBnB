@@ -5,6 +5,6 @@ feature "visiting booking page" do
     user2 = User.create(email: "dave@test.com", password: "blah", name: "dave")
     visit("spaces")
     click_button("Request Booking")
-    expect(current_path).to eq '/spaces/#{listing.id}'
+    expect(current_path).to eq "/spaces/#{listing.id}"
   end
 end
