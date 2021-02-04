@@ -2,14 +2,15 @@ require_relative 'database_connection'
 
 class Spaces
 
-  attr_reader :id, :name, :description, :cost, :user_id
+  attr_reader :id, :name, :description, :cost, :user_id, :availability
 
-  def initialize(id:, name:, description:, cost:, user_id:)
+  def initialize(id:, name:, description:, cost:, user_id:, availability: )
     @id = id
     @name = name
     @description = description
     @cost = cost
     @user_id = user_id
+    @availability = availability
   end
 
   def self.create(name:, description:, cost:, user_id:)
@@ -20,8 +21,8 @@ class Spaces
     else
       connection = PG.connect(dbname: 'makersbnb')
     end
-    result = connection.exec("INSERT INTO listings (name, description, cost, user_id) VALUES ('#{name}', '#{description}', '#{cost}', #{user_id}) RETURNING id, name, description, cost, user_id;").first
-    Spaces.new(id: result['id'], name: result['name'], description: result['description'], cost: result['cost'], user_id: result['user_id'])
+    result = connection.exec("INSERT INTO listings (name, description, cost, user_id) VALUES ('#{name}', '#{description}', '#{cost}', #{user_id}) RETURNING id, name, description, cost, user_id, availability;").first
+    Spaces.new(id: result['id'], name: result['name'], description: result['description'], cost: result['cost'], user_id: result['user_id'], availability: result['availability'])
   end
 
   def self.all
@@ -32,7 +33,7 @@ class Spaces
     end
     result = connection.exec("SELECT * FROM listings;")
     result.map do |listing|
-      Spaces.new(id: listing['id'], name: listing['name'], description: listing['description'], cost: listing['cost'], user_id: listing['user_id'])
+      Spaces.new(id: listing['id'], name: listing['name'], description: listing['description'], cost: listing['cost'], user_id: listing['user_id'], availability: listing['availability'])
     end
   end
 
@@ -43,6 +44,6 @@ class Spaces
       connection = PG.connect(dbname: 'makersbnb')
     end
     result = connection.exec("SELECT * FROM listings WHERE id = '#{id}';").first
-    Spaces.new(id: result['id'], name: result['name'], description: result['description'], cost: result['cost'], user_id: result['user_id'])
+    Spaces.new(id: result['id'], name: result['name'], description: result['description'], cost: result['cost'], user_id: result['user_id'], availability: result['availability'])
   end
 end
