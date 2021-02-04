@@ -5,18 +5,20 @@
 
 <h1>Book a Space</h1>
 
-<%# <input value="List a Space" type="submit" /> %>
-
 <a href='spaces/new'><button>List a Space</button></a>
 
 <div class='listings'>
 <% @spaces.map do | space | %>
 <br>
 <%= space.name %>
+
+<% if space.availability == "t" %>
+
 <form action="/spaces/<%= space.id %>" method="get">
   <input type="submit"  value="Request Booking">
 </form>
 <br>
+<% end %>
 <% end %>
 </div>
 
