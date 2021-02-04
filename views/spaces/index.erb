@@ -8,9 +8,10 @@
 <% @spaces.map do | space | %>
 <br>
 <%= space.name %>
-<form action="/spaces/<%= space.id %>" method="post">
+<form action="/spaces/<%= space.id %>" method="get">
   <input type="submit"  value="Request Booking">
 </form>
 <br>
 <% end %>
 </div>
+

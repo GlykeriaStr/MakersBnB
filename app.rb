@@ -8,7 +8,7 @@ class MakersBnB < Sinatra::Base
 
   enable :sessions, :method_override
   register Sinatra::Flash
-  
+
   get '/' do
     erb(:index)
   end
@@ -19,21 +19,26 @@ class MakersBnB < Sinatra::Base
 
   get '/spaces' do
     @spaces = Spaces.all
+    p @spaces
     erb(:"spaces/index")
   end
-  
+
   get '/spaces/new' do
     erb(:"spaces/new")
   end
 
-  # get '/booking/:id' do
-  post '/spaces/:id' do
+  get '/spaces/:id' do
+    @space = Spaces.find_by_id(id: params[:id])
+
+  
     erb(:"spaces/book")
   end
 
   post '/spaces' do
-    users = User.find_by_id(id: session[:user_id])
-    space = Spaces.create(name: params[:spacename], description: params[:spacedescription], cost: params[:spaceprice], user_id: users.id)
+    user = User.find_by_id(id: session[:user_id])
+    space = Spaces.create(name: params[:spacename], description: params[:spacedescription], cost: params[:spaceprice], user_id: user.id)
+    p space
+    session[:id] = space.id
     redirect '/spaces'
   end
 
