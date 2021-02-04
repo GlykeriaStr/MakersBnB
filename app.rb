@@ -29,6 +29,7 @@ class MakersBnB < Sinatra::Base
 
   get '/spaces/:id' do
     @space = Spaces.find_by_id(id: params[:id])
+    @add_booking = Booking.create(listing_id: params[:id], user_id: session[:user_id])
     erb(:"spaces/book")
   end
 
