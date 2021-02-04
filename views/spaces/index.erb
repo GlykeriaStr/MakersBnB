@@ -11,6 +11,10 @@
 <% @spaces.map do | space | %>
 <br>
 <%= space.name %>
+<br />
+Description: <%= space.description %>
+<br />
+Cost: <%= space.cost %>
 
 <% if space.availability == "t" %>
 

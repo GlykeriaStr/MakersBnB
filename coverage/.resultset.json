@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/bullhornfixie/Desktop/VSC/Projects/MakersBnB/spec/booking_spec.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/booking_spec.rb": {
         "lines": [
           1,
           1,
@@ -29,7 +29,7 @@
           null
         ]
       },
-      "/Users/bullhornfixie/Desktop/VSC/Projects/MakersBnB/spec/persisted_data.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/persisted_data.rb": {
         "lines": [
           1,
           null,
@@ -39,7 +39,7 @@
           null
         ]
       },
-      "/Users/bullhornfixie/Desktop/VSC/Projects/MakersBnB/spec/database_connection_spec.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/database_connection_spec.rb": {
         "lines": [
           1,
           null,
@@ -65,7 +65,7 @@
           null
         ]
       },
-      "/Users/bullhornfixie/Desktop/VSC/Projects/MakersBnB/spec/feature/booking_spec.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/feature/booking_spec.rb": {
         "lines": [
           1,
           1,
@@ -80,7 +80,7 @@
           null
         ]
       },
-      "/Users/bullhornfixie/Desktop/VSC/Projects/MakersBnB/spec/feature/homepage_spec.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/feature/homepage_spec.rb": {
         "lines": [
           1,
           1,
@@ -91,7 +91,7 @@
           null
         ]
       },
-      "/Users/bullhornfixie/Desktop/VSC/Projects/MakersBnB/spec/feature/listing_spec.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/feature/listing_spec.rb": {
         "lines": [
           1,
           1,
@@ -111,7 +111,7 @@
           null
         ]
       },
-      "/Users/bullhornfixie/Desktop/VSC/Projects/MakersBnB/spec/feature/login_spec.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/feature/login_spec.rb": {
         "lines": [
           1,
           1,
@@ -128,7 +128,7 @@
           null
         ]
       },
-      "/Users/bullhornfixie/Desktop/VSC/Projects/MakersBnB/spec/feature/logout_spec.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/feature/logout_spec.rb": {
         "lines": [
           1,
           1,
@@ -142,7 +142,7 @@
           null
         ]
       },
-      "/Users/bullhornfixie/Desktop/VSC/Projects/MakersBnB/spec/feature/registration_spec.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/feature/registration_spec.rb": {
         "lines": [
           1,
           1,
@@ -154,7 +154,7 @@
           null
         ]
       },
-      "/Users/bullhornfixie/Desktop/VSC/Projects/MakersBnB/spec/feature/web_helpers_spec.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/feature/web_helpers_spec.rb": {
         "lines": [
           1,
           2,
@@ -165,7 +165,7 @@
           null
         ]
       },
-      "/Users/bullhornfixie/Desktop/VSC/Projects/MakersBnB/spec/spaces_spec.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/spaces_spec.rb": {
         "lines": [
           1,
           1,
@@ -220,7 +220,7 @@
           null
         ]
       },
-      "/Users/bullhornfixie/Desktop/VSC/Projects/MakersBnB/spec/users_spec.rb": {
+      "/Users/carrot-2/Library/Mobile Documents/com~apple~CloudDocs/Makers/group-projects/MakersBnB/spec/users_spec.rb": {
         "lines": [
           1,
           null,
@@ -269,6 +269,6 @@
         ]
       }
     },
-    "timestamp": 1612455642
+    "timestamp": 1612459111
   }
 }

@@ -16,7 +16,7 @@ form {
 }
 
 h1 {
-  font-family: 'Merienda One', cursive;
+  font-family: 'Lexend Mega', sans-serif;
 }
 
 .header-links {
@@ -35,4 +35,9 @@ h1 {
 
 .page-title {
   margin: 25px;
+}
+.log-in-title {
+  margin: 25px;
+  position: relative;
+  display: flex;
 }
