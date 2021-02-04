@@ -6,5 +6,6 @@ feature "visiting booking page" do
     visit("spaces")
     click_button("Request Booking")
     expect(current_path).to eq "/spaces/#{listing.id}"
+    expect(page).to have_content("You just booked shack!")
   end
 end
