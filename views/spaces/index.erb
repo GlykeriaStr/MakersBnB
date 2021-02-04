@@ -4,7 +4,7 @@
 
 <a href='spaces/new'><button>List a Space</button></a>
 
-
+<div class='listings'>
 <% @spaces.map do | space | %>
 <br>
 <%= space.name %>
@@ -13,3 +13,5 @@
 </form>
 <br>
 <% end %>
+</div>
+
