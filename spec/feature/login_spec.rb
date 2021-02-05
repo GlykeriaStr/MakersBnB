@@ -18,12 +18,12 @@ feature 'a user has access to MakersBnB' do
     expect(page).to have_content("Please check your email or password.")
   end
 
-  scenario 'you get a flash notice if you put in wrong password' do 
+  scenario 'you get a flash notice if you put in wrong password' do
     user = User.create(email: 'hello@gmail', password: 'password', name: 'meg')
     visit('/login')
     fill_in('email', with: 'hello@gmail')
     fill_in("password", with: "hello")
-click_button("Log in")
-expect(page).to have_content("Please check your email or password.")
-  end 
+    click_button("Log in")
+    expect(page).to have_content("Please check your email or password.")
+  end
 end
