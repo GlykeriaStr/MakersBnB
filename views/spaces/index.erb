@@ -1,27 +1,42 @@
-<form action="/sessions/destroy" method='post'>
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Makers BnB</title>
+  </head>
+  <body>
+  <div class='log-out-button'>
+  <form action="/sessions/destroy" method='post'>
 <input type='submit' value='Log Out'>
 </form>
-
-
-<h1>Book a Space</h1>
-
-<a href='spaces/new'><button>List a Space</button></a>
+</div>
 
 <div class='listings'>
 <% @spaces.map do | space | %>
-<br>
-<%= space.name %>
-<br />
-Description: <%= space.description %>
-<br />
-Cost: <%= space.cost %>
-
-<% if space.availability == "t" && space.user_id != session[:user_id] %>
-
-<form action="/spaces/<%= space.id %>" method="get">
-  <input type="submit"  value="Request Booking">
-</form>
-<br>
+<div class="card" style="width: 18rem;">
+  <%# <img src="/imag" class="card-img-top" alt="..."> %>
+  <div class="card-body">
+    <h5 class="card-title"><%= space.name %> - £<%= space.cost %></h5>
+    <p class="card-text"><%= space.description %></p>
+    <% if space.availability == "t" && space.user_id != session[:user_id] %>
+    <a href="/spaces/<%= space.id %>" class="btn btn-primary">Request Booking</a>
 <% end %>
+
+  </div>
+</div>
 <% end %>
 </div>
+<div class="list-a-space-button">
+<a href='spaces/new'> <button type="button" class="btn btn-success">List a Space</button></a>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html> 

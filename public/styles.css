@@ -15,10 +15,6 @@ form {
   margin: 5px;
 }
 
-h1 {
-  font-family: 'Lexend Mega', sans-serif;
-}
-
 .header-links {
   text-align: end;
   margin: 25px;
@@ -34,10 +30,37 @@ h1 {
 }
 
 .page-title {
+  font-family: 'Lexend Mega', sans-serif;
   margin: 25px;
 }
 .log-in-title {
   margin: 25px;
   position: relative;
   display: flex;
+}
+
+.booking-confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 50px;
+}
+
+.listings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  margin: 25px;
+}
+
+.log-out-button {
+  text-align: end;
+}
+
+.list-a-space-button {
+  text-align: center;
 }
