@@ -14,22 +14,14 @@
 5. Create a development database `CREATE DATABASE makersbnb;`
 6. Connect to the database `\c makersbnb;`
 7. Run the commands in the `db/migrations` directory
-8. Exit psql `\q`
-
-To run the tests a test database will also need to be set up.
-
-#### Test Database Setup
-
-9. Connect to psql `psql`
-10. Create a development database `CREATE DATABASE makersbnb_test;`
-11. Connect to the database `\c makersbnb_test;`
-12. Run the commands in the `db/migrations` directory
-13. Exit psql `\q`
+8. Create a development database `CREATE DATABASE makersbnb_test;`
+9. Go back and complete steps 6 and 7 for `makersbnb_test` databese
+10. Exit psql `\q`
 
 #### Using the app
 
-14. Run local server `rackup`
-15. Open browser and head to `http://localhost:9292`
+11. Run local server `rackup`
+12. Open browser and head to `http://localhost:9292`
 
 ### Screenshots of the app
 
