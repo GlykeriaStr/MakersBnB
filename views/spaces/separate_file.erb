@@ -1,0 +1,28 @@
+
+<form action="/sessions/destroy" method='post'>
+<input type='submit' value='Log Out'>
+</form>
+
+
+<h1>Book a Space</h1>
+
+<a href='spaces/new'><button>List a Space</button></a>
+
+<div class='listings'>
+<% @spaces.map do | space | %>
+<br>
+<%= space.name %>
+<br />
+Description: <%= space.description %>
+<br />
+Cost: <%= space.cost %>
+
+<% if space.availability == "t" %>
+
+<form action="/spaces/<%= space.id %>" method="get">
+  <input type="submit"  value="Request Booking">
+</form>
+<br>
+<% end %>
+<% end %>
+</div>

@@ -58,6 +58,10 @@ class MakersBnB < Sinatra::Base
     end
   end
 
+  get '/about' do
+    erb(:about)
+  end
+
   post '/sessions/destroy' do
     session.clear
     flash[:notice] = "You have logged out!"
