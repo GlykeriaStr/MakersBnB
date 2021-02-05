@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/booking_spec.rb": {
+      "/Users/megangosnell/Desktop/MakersBnB/spec/booking_spec.rb": {
         "lines": [
           1,
           1,
@@ -29,7 +29,7 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/persisted_data.rb": {
+      "/Users/megangosnell/Desktop/MakersBnB/spec/persisted_data.rb": {
         "lines": [
           1,
           null,
@@ -39,7 +39,7 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/database_connection_spec.rb": {
+      "/Users/megangosnell/Desktop/MakersBnB/spec/database_connection_spec.rb": {
         "lines": [
           1,
           null,
@@ -65,7 +65,7 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/feature/booking_spec.rb": {
+      "/Users/megangosnell/Desktop/MakersBnB/spec/feature/booking_spec.rb": {
         "lines": [
           1,
           1,
@@ -80,7 +80,7 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/feature/homepage_spec.rb": {
+      "/Users/megangosnell/Desktop/MakersBnB/spec/feature/homepage_spec.rb": {
         "lines": [
           1,
           1,
@@ -91,36 +91,12 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/feature/listing_spec.rb": {
+      "/Users/megangosnell/Desktop/MakersBnB/spec/feature/listing_spec.rb": {
         "lines": [
           1,
           1,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/feature/login_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
           1,
           1,
           1,
@@ -132,7 +108,40 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/feature/logout_spec.rb": {
+      "/Users/megangosnell/Desktop/MakersBnB/spec/feature/login_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/megangosnell/Desktop/MakersBnB/spec/feature/logout_spec.rb": {
         "lines": [
           1,
           1,
@@ -146,7 +155,7 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/feature/registration_spec.rb": {
+      "/Users/megangosnell/Desktop/MakersBnB/spec/feature/registration_spec.rb": {
         "lines": [
           1,
           1,
@@ -158,7 +167,7 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/feature/web_helpers_spec.rb": {
+      "/Users/megangosnell/Desktop/MakersBnB/spec/feature/web_helpers_spec.rb": {
         "lines": [
           1,
           2,
@@ -169,7 +178,7 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/spaces_spec.rb": {
+      "/Users/megangosnell/Desktop/MakersBnB/spec/spaces_spec.rb": {
         "lines": [
           1,
           1,
@@ -224,7 +233,7 @@
           null
         ]
       },
-      "/Users/glykeriastravodimou/MakersAcademy/Afternoon_challenges/MakersBnB/spec/users_spec.rb": {
+      "/Users/megangosnell/Desktop/MakersBnB/spec/users_spec.rb": {
         "lines": [
           1,
           null,
@@ -273,6 +282,6 @@
         ]
       }
     },
-    "timestamp": 1612520935
+    "timestamp": 1612521280
   }
 }
