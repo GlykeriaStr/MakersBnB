@@ -64,3 +64,9 @@ form {
 .list-a-space-button {
   text-align: center;
 }
+
+.book-a-space-title {
+  position: relative;
+  margin: 25px;
+  text-align: center;
+}
