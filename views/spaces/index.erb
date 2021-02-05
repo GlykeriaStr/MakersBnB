@@ -16,7 +16,7 @@ Description: <%= space.description %>
 <br />
 Cost: <%= space.cost %>
 
-<% if space.availability == "t" %>
+<% if space.availability == "t" && space.user_id != session[:user_id] %>
 
 <form action="/spaces/<%= space.id %>" method="get">
   <input type="submit"  value="Request Booking">
@@ -25,4 +25,3 @@ Cost: <%= space.cost %>
 <% end %>
 <% end %>
 </div>
-
