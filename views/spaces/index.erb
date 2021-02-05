@@ -26,7 +26,7 @@
   <div class="card-body">
     <h5 class="card-title"><%= space.name %> - £<%= space.cost %></h5>
     <p class="card-text"><%= space.description %></p>
-    <% if space.availability == "t" %>
+    <% if space.availability == "t" && space.user_id != session[:user_id] %>
     <a href="/spaces/<%= space.id %>" class="btn btn-primary">Request Booking</a>
 <% end %>
 
