@@ -31,5 +31,16 @@ To run the tests a test database will also need to be set up.
 14. Run local server `rackup`
 15. Open browser and head to `http://localhost:9292`
 
-16. test - glykeria 
-17. test - meg 
+### Screenshots of the app
+
+![index](images_readme/index.png)
+
+![log in](images_readme/log_in.png)
+
+![about](images_readme/about.png)
+
+![spaces](images_readme/spaces.png)
+
+![list a space](images_readme/list_space.png)
+
+![booked space](images_readme/booked_space.png)
